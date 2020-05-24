@@ -1,0 +1,163 @@
+
+# coding: utf-8
+
+# # MODULES 
+#              
+#     1. In python, Module is nothing but a file.
+#     2. A module contains varaibles, constatns, functions, classes  and objects.
+#     3. python modules are 2 types:
+#           a). Built-in modules
+#           b). User-defined modules
+#     
+# 
+
+# #  Built-in modules: 
+#         These modules are coming from python software internally.
+#     
+#     ex: math, copy, os, platform, random,
+#         keyword, datetime, date, time, calendar
+#         tkinter, mysql,sqlite3
+#         numpy, scipy, pandas, matplotlib, matrix, pillow
+# 
+
+# # Math Module: 
+# It is a built-in module. to perform mathematical operations.
+# 
+#         math.pi - an approximation of the ratio of the circumference to the diameter of a circle.
+#         math.e - an approximation of the base of the natural logarithm.
+#         math.ceil(x) - Returns the smallest integer greater than or equal to it, as a float.
+#         math.fabs(x) - Returns the absolute value of x.
+#         math.factorial(x) - Returns x factorial, which is 1 * 2 * 3 * ... *x.
+#         math.floor(x) - Returns the greatest integer less than or equal to x as a float.
+#         math.exp(x) - Returns ex.
+#         math.log(x) - Returns ln x.
+#         math.log(x, base) - Returns logbasex.
+#         math.sqrt(x) - Returns the square root of x.
+#         math.cos(x) - Returns the cosine of x radians.
+#         math.sin(x) - Returns the sine of x radians.
+#         math.tan(x) - Returns the tangent of x radians.
+# 
+
+# In[ ]:
+
+
+import math
+math.pi
+
+
+# In[ ]:
+
+
+math.sqrt(25)
+
+
+# In[ ]:
+
+
+math.sqrt(100)
+
+
+# In[ ]:
+
+
+math.ceil(5.6)
+
+
+# In[ ]:
+
+
+math.floor(5.6)
+
+
+# In[ ]:
+
+
+math.factorial(5)
+
+
+# In[ ]:
+
+
+math.pow(4,3)
+
+
+# # keyword module: 
+#     It is a built-in module. It contains
+#       kwlist : It displays the list of keywords.
+#       iskeyword(): It is a function. the given argument is a keyword or not.
+#                      It returns either True/False.
+#                      If it is a keyword it returns True otherwise it returns False.                 
+
+# In[ ]:
+
+
+#ex-1:write a program to display all python keywords.  
+import keyword
+keyword.kwlist
+
+
+# In[16]:
+
+
+#ex-2: write a program to find given word is keyword or not.
+import keyword
+w=input('enter any word')
+if keyword.iskeyword(w):
+    print('given word is keyword')
+else:
+    print('given word is not a keyword')
+
+
+# # Calendar module:
+#     This module displays a calendar information.
+# 
+
+# In[17]:
+
+
+#ex-1:write  a program to display a calendar of a given month.
+import calendar
+m=int(input('enter month number'))
+y=int(input('enter year:'))
+print(calendar.month(y,m))          
+
+
+# In[ ]:
+
+
+#ex-2:write  a program to display a year  calendar.
+import calendar
+y=int(input('enter year:'))
+print(calendar.calendar(y)) 
+
+
+# # B. user-defined modules:
+#   These modules developed by progmmer as per the requirements.
+# 
+
+# In[20]:
+
+
+#ex:to create user defined module with variables and functions
+a=88
+b=99
+def f1():
+    print('i am f1 of first module')
+
+def f2():
+    print('i am f2 of first module')
+    
+def f3():
+    print('i am f3 of first module')
+
+
+# In[22]:
+
+
+import first
+first.a
+first.b
+first.f1()
+first.f2()
+first.f3() 
+
